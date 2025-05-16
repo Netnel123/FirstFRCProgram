@@ -56,7 +56,7 @@ public class Date {
                 if (day>31){return false;}
                 break;
         }
-        if (month>12){
+        if (month>12&&year >-1){
             return false;
         }
         return true;

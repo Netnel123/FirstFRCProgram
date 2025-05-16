@@ -64,4 +64,23 @@ public class Date {
     private boolean isLeapYear (int year) {
         return (this.year%4==0 && this.year%100!=0) || (this.year%400==0) ? true : false;
     }
+    public String toString(){
+        String StrDare;
+        StrDare = ""+day+"/"+month+"/"+year;
+        return StrDare;
+    }
+    public boolean equals(Date other){
+        if (other.day==this.day&&other.month==this.month&&other.year==this.year) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+    public boolean before(Date other){
+        if (other.day<this.day&&other.month<this.month&&other.year<this.year) {
+            return true;
+        }else {
+            return false;
+        }
+    }
 }

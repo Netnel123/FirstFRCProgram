@@ -83,4 +83,85 @@ public class Date {
             return false;
         }
     }
+    public void addDays(int num) {
+        day += num;
+        switch (month) {
+            case 1:
+                if (day > 31) {
+                    day -= 31;
+                    month += 1;
+                }
+                break;
+            case 2:
+                if (day > 28) {
+                    day -= 28;
+                    month += 1;
+                }
+                break;
+            case 3:
+                if (day > 31) {
+                    day -= 31;
+                    month += 1;
+                }
+                break;
+            case 4:
+                if (day > 30) {
+                    day -= 30;
+                    month += 1;
+                }
+                break;
+            case 5:
+                if (day > 31) {
+                    day -= 31;
+                    month += 1;
+                }
+                break;
+            case 6:
+                if (day > 30) {
+                    day -= 30;
+                    month += 1;
+                }
+                break;
+            case 7:
+                if (day > 31) {
+                    day -= 31;
+                    month += 1;
+                }
+                break;
+            case 8:
+                if (day > 31) {
+                    day -= 31;
+                    month += 1;
+                }
+                break;
+            case 9:
+                if (day > 30) {
+                    day -= 30;
+                    month += 1;
+                }
+                break;
+            case 10:
+                if (day > 31) {
+                    day -= 31;
+                    month += 1;
+                }
+                break;
+            case 11:
+                if (day > 30) {
+                    day -= 30;
+                    month += 1;
+                }
+                break;
+            case 12:
+                if (day > 31) {
+                    day -= 30;
+                    month += 1;
+                }
+                break;
+        }
+        if (month>12){
+            month=1;
+            year++;
+        }
+    }
 }

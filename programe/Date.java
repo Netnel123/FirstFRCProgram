@@ -3,9 +3,9 @@ package programe;
 public class Date {
     private final int maxDysInAMonth = 30;
     private final int maxMonthInAYear =12;
-    private int day;
-    private int month;
-    private int year;
+    public int day;
+    public int month;
+    public int year;
     public Date(int day,int month,int year){
       this.day=day;
       this.month=month;
